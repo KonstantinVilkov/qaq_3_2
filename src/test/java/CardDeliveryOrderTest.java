@@ -29,10 +29,9 @@ public class CardDeliveryOrderTest {
         SelenideElement notification = $("[data-test-id=notification]");
         $("[data-test-id=notification]").waitUntil(visible,15000);
         $("[data-test-id=notification] .notification__title").should(Condition.exactText("Успешно!"));
-        //$("[data-test-id=notification] .notification__content").should(Condition.exactText("Встреча успешно забронирована на " + date));
         $("[data-test-id=notification] .notification__content").should(Condition.exactText("Встреча успешно забронирована на " + date));
     }
-
+    
 
 
 
